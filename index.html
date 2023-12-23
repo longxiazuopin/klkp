@@ -1,61 +1,62 @@
-<超文本标记语言>
+
+<html>
  
-    <元字符集="utf-8">
-    <元姓名="视口" 内容="width=设备宽度，初始比例=1，最大比例=1，用户可缩放=否">
-    <标题>恐龙快跑</标题>
-    <风格>
-身体，
-超文本标记语言{
-            填充:0;
-            边缘:0;
-            宽度:100%;
-            高度:100%
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>恐龙快跑</title>
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%
         }
         
-.icon{
-            -webkit-user-select:没有一个;
-            用户选择:没有一个;
-            显示:内联块
+        .icon {
+            -webkit-user-select: none;
+            user-select: none;
+            display: inline-block
         }
         
-.icon-离线{
-            内容:URL(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABIAQMAAABvIyEEAAAABlBMVEUAAABTU1OoaSf/AAAAAXRSTlMAQObYZgAAAGxJREFUeF7tyMEJwkAQRuFf5ipMKxYQiJ3Z2nSwrWwBA0+DQZcdxEOueaePp9+dQZFB7GpUcURSVU66yVNFj6LFICatThZB6r/ko/pbRpUgilY0Cbw5sNmb9txGXUKyuH7eV25x39DtJXUNPQGJtWFV+BT/QAAAAABJRU5ErkJggg==);
-            位置:相对的
+        .icon-offline {
+            content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABIAQMAAABvIyEEAAAABlBMVEUAAABTU1OoaSf/AAAAAXRSTlMAQObYZgAAAGxJREFUeF7tyMEJwkAQRuFf5ipMKxYQiJ3Z2nSwrWwBA0+DQZcdxEOueaePp9+dQZFB7GpUcURSVU66yVNFj6LFICatThZB6r/ko/pbRpUgilY0Cbw5sNmb9txGXUKyuH7eV25x39DtJXUNPQGJtWFV+BT/QAAAAABJRU5ErkJggg==);
+            position: relative
         }
         
-.hidden{
-            显示:没有一个
+        .hidden {
+            display: none
         }
         
-.离线.间隙包装器{
-            颜色：#2b2b2b；
-            字体大小:1他们;
-            线高:1.55;
-            边缘:0 自动;
-            最大宽度:600PX;
-            顶部衬垫:100PX;
-            宽度:100%
+        .offline .interstitial-wrapper {
+            color: #2b2b2b;
+            font-size: 1em;
+            line-height: 1.55;
+            margin: 0 auto;
+            max-width: 600px;
+            padding-top: 100px;
+            width: 100%
         }
         
-.脱机.runner-container{
-            高度:150PX;
-            最大宽度:600PX;
-            溢出:隐藏的;
-            位置:绝对的;
-            顶端:35PX;
-            宽度:44PX
+        .offline .runner-container {
+            height: 150px;
+            max-width: 600px;
+            overflow: hidden;
+            position: absolute;
+            top: 35px;
+            width: 44px
         }
         
-.脱机.runner-canvas{
-            高度:150PX;
-            最大宽度:600PX;
-            不透明度:1;
-            溢出:隐藏的;
-            位置:绝对的;
-            顶端:0;
-            Z指数:2
+        .offline .runner-canvas {
+            height: 150px;
+            max-width: 600px;
+            opacity: 1;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            z-index: 2
         }
-        
+   
         .offline .controller {
             background: rgba(247, 247, 247, .1);
             height: 100vh;
